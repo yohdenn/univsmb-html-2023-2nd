@@ -1,0 +1,18 @@
+image: gitpod/workspace-python
+
+ports:
+  - port: 5000
+    onOpen: open-preview
+    description: University of Savoy - Flask Sample app
+
+tasks:
+  - init: >
+      pip install -r requirements.txt &&
+      pip install --upgrade pip &&
+      gp sync-done bundle
+  - command: >
+      gp sync-await bundle && flask run
+
+vscode:
+  extensions:
+    - ms-python.python
