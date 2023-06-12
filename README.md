@@ -1,1 +1,1 @@
-# univsmb-html-website
+# Website for University of Savoy
